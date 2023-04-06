@@ -1,0 +1,31 @@
+XXXXXXXXXXXXXXXXXXXXX
+XK        X        KX
+X XX XXXX X XXXX XX X
+X         P         X
+X XX X XXXXXXX X XX X
+X    X    X    X    X
+XXXX XXXX X XXXX XXXX
+...X X         X X...
+XXXX X XXX.XXX X XXXX
+4... X XX123XX X ...5
+XXXX X XXXXXXX X XXXX
+X    X    K    X    X
+XXXX X XXXXXXX X XXXX
+X         X         X
+XXXX   XXXXXXX   XXXX
+XXXX X XXXXXXX X XXXX
+X    X    K    X    X
+XXXX X XXXXXXX X XXXX
+X         X         X
+XXXX XXXXXXXXXXX XXXX
+XXXX X XXXXXXX X XXXX
+X    X    K    X    X
+XXXX X XXXXXXX X XXXX
+X         X         X
+XXXXXXXXXXXXXXXXXXXXX
+C: X is the walls
+C: . is black pixels
+C: 123 are each ghost
+C: 4 and 5 and teleporting points
+C: K is the bonuses
+C: P is the player

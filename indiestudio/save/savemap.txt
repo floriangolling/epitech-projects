@@ -1,0 +1,13 @@
+###############
+#   BBBBBBBB  #
+# # # #B# #B# #
+#    XBBBBBX  #
+# # #B#B#B#B# #
+#B SBB B BB   #
+#B# #B#B#B#B# #
+#    B B BBS  #
+# # # #B#B#B# #
+#  BS  BBBBB  #
+# # # #B# #B# #
+#     BBBBB   #
+###############

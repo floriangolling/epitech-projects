@@ -1,0 +1,143 @@
+{
+  "game": {
+    "entities" : [
+      {"name": "background", "components": [
+        {"name": "positionComponent", "x": 0, "y": 0},
+        {"name": "textureComponent", "filePath": "assets/back_game.png"},
+        {"name": "rectangleComponent"}
+      ], "events": []},
+      {"name": "scene", "components": [
+        {"name": "cameraComponent",
+          "positionX": 7, "positionY": 16, "positionZ": 15,
+          "targetX": 7, "targetY": 8.2, "targetZ": 11,
+          "upX": 0, "upY": 1.0, "upZ": 0,
+          "fovy": 45.0
+        }
+      ], "events": []},
+      {"name": "mapindestructible", "components": [
+        {"name": "MapComponent", "positionMeshX": 1, "positionMeshY": 1, "positionMeshZ": 1, "positionMapX": 0, "positionMapY": 0,"positionMapZ": 0, "maptype":  0}
+      ], "events": []},
+      {"name": "mapzdestructible", "components": [
+        {"name": "MapComponent", "positionMeshX": 1, "positionMeshY": 1, "positionMeshZ": 1, "positionMapX": 0, "positionMapY": 0,"positionMapZ": 0, "maptype":  1}
+      ], "events": []},
+      {"name": "character1", "components": [
+        {"name": "PersoComponent",
+          "positionX": 1, "positionY": 0, "positionZ": 1,
+          "iddlemodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": 3
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso4/p4_idle_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso4/p4_walk_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso4/p4_dying_anim.iqm",
+          "actualanimation" : 0,
+          "type": 1},
+          {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "speed": 2.6, "range": 1}
+      ], "events": [{"name": "switchScene", "id": "winMenu"}]},
+      {"name": "character2", "components": [
+        {"name": "PersoComponent",
+          "positionX": 13, "positionY": 0, "positionZ": 1,
+          "iddlemodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": 2
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso3/p3_idle_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso3/p3_walk_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso3/p3_dying_anim.iqm",
+          "actualanimation" : 0,
+          "type": 1},
+          {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "speed": 2.6, "range": 1}
+      ], "events": [{"name": "switchScene", "id": "winMenu"}]},
+      {"name": "character3", "components": [
+        {"name": "PersoComponent",
+          "positionX": 13, "positionY": 0, "positionZ": 11,
+          "iddlemodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": 1
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso2/p2_idle_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso2/p2_walk_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso2/p2_dying_anim.iqm",
+          "actualanimation" : 0,
+          "type": 1},
+          {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "speed": 2.6, "range": 1}
+      ], "events": [{"name": "switchScene", "id": "winMenu"}]},
+      {"name": "character4", "components": [
+        {"name": "PersoComponent",
+          "positionX": 1, "positionY": 0, "positionZ": 11,
+          "iddlemodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": 0
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso1/p1_idle_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso1/p1_walk_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso1/p1_dying_anim.iqm",
+          "actualanimation" : 0,
+          "type": 1},
+          {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "speed": 2.6, "range": 1}
+      ], "events": [{"name": "switchScene", "id": "winMenu"}]},
+      {"name": "playButton", "components": [
+        {"name": "positionComponent", "x": 110, "y": 370},
+        {"name": "textureComponent", "filePath": "assets/MainMenu/play.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 1},
+        {"name": "mouseEventComponent"},
+        {"name": "PauseComponent"}
+    ], "events": []},
+    {"name": "saveButton", "components": [
+        {"name": "positionComponent", "x": 110, "y": 450},
+        {"name": "textureComponent", "filePath": "assets/MainMenu/save.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 2},
+        {"name": "mouseEventComponent"},
+        {"name": "PauseComponent"}
+    ], "events": [
+      {"name": "save"}
+    ]},
+    {"name": "mainmenuButton", "components": [
+        {"name": "positionComponent", "x": 110, "y": 530},
+        {"name": "textureComponent", "filePath": "assets/MainMenu/mainmenu.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 3},
+        {"name": "mouseEventComponent"},
+        {"name": "PauseComponent"}
+    ], "events": [
+      {"name": "switchScene", "id": "mainMenu"},
+      {"name": "changeTexture"}
+    ]},
+      {"name": "quitButton", "components": [
+          {"name": "positionComponent", "x": 110, "y": 615},
+          {"name": "textureComponent", "filePath": "assets/MainMenu/quit.png"},
+          {"name": "rectangleComponent"},
+          {"name": "buttonComponent", "state": 0, "number": 4},
+          {"name": "mouseEventComponent"},
+          {"name": "PauseComponent"}
+      ], "events": [
+        {"name": "quit"}
+      ]},
+    {"name": "backgroundTwo", "components": [
+        {"name": "positionComponent", "x": 0, "y": 0},
+        {"name": "textureComponent", "filePath": "assets/background.png"},
+        {"name": "rectangleComponent"},
+        {"name": "PauseComponent"}
+    ], "events": []},
+    {"name": "logo", "components": [
+      {"name": "positionComponent", "x": 60, "y": 75},
+      {"name": "textureComponent", "filePath": "assets/MainMenu/img_logo.png"},
+      {"name": "rectangleComponent"}
+  ], "events": []}
+    ]
+  }
+}

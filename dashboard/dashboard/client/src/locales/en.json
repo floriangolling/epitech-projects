@@ -1,0 +1,58 @@
+{
+    "Login" : {
+        "title": "LOGIN",
+        "subtitle": "Please login to proceed.",
+        "signup": "Sign up",
+        "password": "Forgot password",
+        "help": "Need help?",
+        "button": "Login",
+        "oauths": "Login oauth with"
+    },
+    "Register": {
+        "title": "REGISTER",
+        "subtitle": "Please register to proceed.",
+        "signup": "Sign up",
+        "password": "Forgot password",
+        "help": "Need help?",
+        "button": "Register",
+        "oauths": "Register oauth with:"
+    },
+    "Home": {
+        "welcome": "Welcome to our dashboard !",
+        "learnMore": "Learn more",
+        "textOne": "Dashboard is an epitech project made in order to create your own dashboard using many APIs as services to retrieve data and show usefull informations that you might need everyday on your chrome's home page for instance",
+        "textTwo": "Please login with twitch or create your account in order to use this website !"
+    },
+    "Profile": {        
+        "username": "Username",
+        "number": "Number of widgets",
+        "welcome": "Welcome",
+        "profile": "Profile",
+        "changePassword": "Change password:",
+        "changeUsername": "Change username:",
+        "alreadyConnected": "Already connected",
+        "apply": "Apply"
+    },
+    "navBar": {
+        "login": "Login",
+        "logout": "Logout",
+        "home": "Home",
+        "profile": "Profile",
+        "signup": "Sign up"
+    },
+    "Dashboard": {
+        "widget": "Add a new  widget",
+        "welcome": "Welcome back"
+    },
+    "Callback": {
+        "redi": "Waiting for redirection, please dont do anything.."
+    },
+    "forgot": {
+        "title": "Forgot password",
+        "email": "Please enter your email"
+    },
+    "reset": {
+        "title": "Forgot password",
+        "email": "Please enter your new password"
+    }    
+}

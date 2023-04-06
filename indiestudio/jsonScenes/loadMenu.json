@@ -1,0 +1,20 @@
+{
+    "loadMenu": {
+        "entities" : [
+            {"name": "return", "components": [
+                {"name": "positionComponent", "x": 20, "y": 20},
+                {"name": "textureComponent", "filePath": "assets/return.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0}
+            ], "events": [
+                {"name": "switchScene", "id": "mainMenu"}
+            ]},
+            {"name": "background", "components": [
+                {"name": "positionComponent", "x": 0, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/background.png"},
+                {"name": "rectangleComponent"}
+            ], "events": []}
+        ]
+    }
+}

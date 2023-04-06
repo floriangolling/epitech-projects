@@ -1,0 +1,92 @@
+{
+    "winMenu" : {
+        "entities" : [
+            {"name": "mainMenuButton", "components": [
+                {"name": "positionComponent", "x": 700, "y": 925},
+                {"name": "textureComponent", "filePath": "assets/back_to_main.png"},
+                {"name": "rectangleComponent"},
+                {"name": "buttonComponent", "state": 0, "number": 1},
+                {"name": "mouseEventComponent"}
+            ], "events": [
+              {"name": "switchScene", "id": "mainMenu"},
+              {"name": "changeTexture"}
+            ]},
+            {"name": "background", "components": [
+                {"name": "positionComponent", "x": 0, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/podium.png"},
+                {"name": "rectangleComponent"}
+            ], "events": []},
+            {"name": "characterOne", "components": [
+                {"name": "cameraComponent",
+                  "positionX": 0.15, "positionY": 2.3, "positionZ": 4,
+                  "targetX": 0.174, "targetY": 0, "targetZ": -1.36,
+                  "upX": 0, "upY": 1.0, "upZ": 0,
+                  "fovy": 50.0
+                },
+                {"name": "PersoComponent",
+                    "positionX": 0.18, "positionY": 0.4, "positionZ": 0.4,
+                    "iddlemodelpath": "../assets/MainMenu/rumba_2.iqm",
+                    "actionmodelpath": "../assets/MainMenu/rumba_2.iqm",
+                    "deathmodelpath": "../assets/MainMenu/rumba_2.iqm",
+                    "texturepath": "../assets/MainMenu/people_texture_map.png",
+                    "id": 0
+                },
+                {"name":  "AnimationComponent",
+                  "iddleanimationpath" :  "../assets/Perso/perso1/win_anim_player_1.iqm",
+                  "actionanimationpath" :  "../assets/Perso/perso1/win_anim_player_1.iqm",
+                  "deathanimationpath" :  "../assets/Perso/perso1/win_anim_player_1.iqm",
+                  "actualanimation" : 0,
+                  "type": 0}
+            ], "events": []},
+          {"name": "characterTwo", "components": [
+            {"name": "PersoComponent",
+              "positionX": 1, "positionY": 0.4, "positionZ": 0.45,
+              "iddlemodelpath": "../assets/Perso/perso2/p2_model.iqm",
+              "actionmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+              "deathmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+              "texturepath": "../assets/MainMenu/people_texture_map.png",
+              "id": 1
+            },
+            {"name":  "AnimationComponent",
+              "iddleanimationpath" :  "../assets/Perso/perso2/win_anim_player_2.iqm",
+              "actionanimationpath" :  "../assets/Perso/perso2/win_anim_player_2.iqm",
+              "deathanimationpath" :  "../assets/Perso/perso2/win_anim_player_2.iqm",
+              "actualanimation" : 0,
+              "type": 0}
+          ], "events": []},
+          {"name": "characterThree", "components": [
+            {"name": "PersoComponent",
+              "positionX": -0.50, "positionY": 0.4, "positionZ": 0.7,
+              "iddlemodelpath": "../assets/Perso/perso3/p3_model.iqm",
+              "actionmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+              "deathmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+              "texturepath": "../assets/MainMenu/people_texture_map.png",
+              "id": 2
+            },
+            {"name":  "AnimationComponent",
+              "iddleanimationpath" :  "../assets/Perso/perso3/win_anim_player_3.iqm",
+              "actionanimationpath" :  "../assets/Perso/perso3/win_anim_player_3.iqm",
+              "deathanimationpath" :  "../assets/Perso/perso3/win_anim_player_3.iqm",
+              "actualanimation" : 0,
+              "type": 0}
+          ], "events": []},
+          {"name": "characterFour", "components": [
+            {"name": "PersoComponent",
+              "positionX": 0.78, "positionY": 0.4, "positionZ": 0.8,
+              "iddlemodelpath": "../assets/Perso/perso4/p4_model.iqm",
+              "actionmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+              "deathmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+              "texturepath": "../assets/MainMenu/people_texture_map.png",
+              "id": 3
+            },
+            {"name":  "AnimationComponent",
+              "iddleanimationpath" :  "../assets/Perso/perso4/win_anim_player_4.iqm",
+              "actionanimationpath" :  "../assets/Perso/perso4/win_anim_player_4.iqm",
+              "deathanimationpath" :  "../assets/Perso/perso4/win_anim_player_4.iqm",
+              "actualanimation" : 0,
+              "type": 1},
+              {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "range": 1, "speed": 2.6}
+          ], "events": []}
+        ]
+    }
+  }

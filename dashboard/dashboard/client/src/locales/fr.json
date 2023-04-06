@@ -1,0 +1,58 @@
+{
+    "Login" : {
+        "title": "CONNEXION",
+        "subtitle": "Connectez vous pour continuer.",
+        "signup": "Se connecter",
+        "password": "Mot de passe oublié",
+        "help": "Besoin d'aide?",
+        "button": "Se connecter",
+        "oauths": "Se connecter avec Oauth"
+    },
+    "Register": {
+        "title": "CREER UN COMPTE",
+        "subtitle": "Créer un compte pour continuer.",
+        "signup": "S'enregistrer",
+        "password": "Mot de passe oublié",
+        "help": "Besoin d'aide?",
+        "button": "Créer le compte",
+        "oauths": "S'inscrire avec:"
+    },
+    "Home": {
+        "welcome": "Bienvenue sur notre dashboard !",
+        "learnMore": "A propos",
+        "textOne": "Le Dashboard est un projet d'epitech  créer dans le but d'avoir un dashboard disponible utilisant de multiples APIs pour récuprer de l'information utile en <<temps réel>> c'est un outils de tout les jours qu'on pourrai avoir dans notre page d'accueil chrome par exemple",
+        "textTwo": "Veuillez créer un compte ou vous connecter en utilisant twitch pour utiliser notre plaforme !"
+    },
+    "Profile": {        
+        "username": "Nom d'utilisateur",
+        "number": "Nombre de widgets",
+        "welcome": "Bienvenue",
+        "profile": "Profil",
+        "changePassword": "Changer de mot de passe:",
+        "changeUsername": "Changer de nom:",
+        "alreadyConnected": "Déjà connecté",
+        "apply": "Appliquer"
+    },
+    "navBar": {
+        "login": "Connexion",
+        "logout": "Deconnexion",
+        "home": "Accueil",
+        "profile": "Profil",
+        "signup": "S'enregistrer"
+    },
+    "Dashboard": {
+        "widget": "Ajouter un nouveau widget",
+        "welcome": "Rebonjour"
+    },
+    "Callback": {
+        "redi": "En attente de redirection, veuillez patienter"
+    },
+    "forgot": {
+        "title": "Mot de passe oublié",
+        "email": "Veuillez entrer votre Email"
+    },
+    "reset": {
+        "title": "Mot de passe oublié",
+        "email": "Veuillez entrer votre nouveau mot de passe"
+    }    
+}

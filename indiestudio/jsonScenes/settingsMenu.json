@@ -1,0 +1,667 @@
+{
+    "settingsMenu": {
+        "entities" : [
+            {"name": "background", "components": [
+                {"name": "positionComponent", "x": 0, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/Settings/background_settings.png"},
+                {"name": "rectangleComponent"},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": []},
+            {"name": "uBackground", "components": [
+                {"name": "positionComponent", "x": -3, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/Settings/tricksTopBg.png"},
+                {"name": "rectangleComponent"},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": []},
+            {"name": "vreturn", "components": [
+                {"name": "positionComponent", "x": 300, "y": 125},
+                {"name": "textureComponent", "filePath": "assets/return.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0}
+            ], "events": [
+                {"name": "switchScene", "id": "mainMenu"}
+            ]},
+            {"name": "vtextSettings", "components": [
+                {"name": "positionComponent", "x": 800, "y": 50},
+                {"name": "textureComponent", "filePath": "assets/Settings/title_settings.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+            ]},
+            {"name": "textResol", "components": [
+                {"name": "positionComponent", "x": 200, "y": 300},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_resolution.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "boxResolOne", "components": [
+                {"name": "positionComponent", "x": 900, "y": 300},
+                {"name": "textureComponent", "filePath": "assets/Settings/1920.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeScale", "size": 1, "id": "settingsMenu"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "boxResolTwo", "components": [
+                {"name": "positionComponent", "x": 1180, "y": 300},
+                {"name": "textureComponent", "filePath": "assets/Settings/1526.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeScale", "size": 0.8, "id": "settingsMenu"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "boxResolThree", "components": [
+                {"name": "positionComponent", "x": 1450, "y": 300},
+                {"name": "textureComponent", "filePath": "assets/Settings/1152.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "changeScale", "size": 0.6, "id": "settingsMenu"}
+            ]},
+            {"name": "textMusic", "components": [
+                {"name": "positionComponent", "x": 200, "y": 450},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_musicVolume.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "musicBarPlus", "components": [
+                {"name": "positionComponent", "x": 1050, "y": 445},
+                {"name": "textureComponent", "filePath": "assets/Settings/plus.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "music", "value": 1}
+            ]},
+            {"name": "musicBarMinus", "components": [
+                {"name": "positionComponent", "x": 1470, "y": 445},
+                {"name": "textureComponent", "filePath": "assets/Settings/minus.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "music", "value": -1}
+            ]},
+            {"name": "musicBarValue", "components": [
+                {"name": "positionComponent", "x": 1300, "y": 495},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "10", "x": 5, "y": -25, "size": 70},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "textSound", "components": [
+                {"name": "positionComponent", "x": 200, "y": 575},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_soundVolume.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "soundBarPlus", "components": [
+                {"name": "positionComponent", "x": 1050, "y": 570},
+                {"name": "textureComponent", "filePath": "assets/Settings/plus.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "sound", "value": 1}
+            ]},
+            {"name": "soundBarMinus", "components": [
+                {"name": "positionComponent", "x": 1470, "y": 570},
+                {"name": "textureComponent", "filePath": "assets/Settings/minus.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "sound", "value": -1}
+            ]},
+            {"name": "soundBarValue", "components": [
+                {"name": "positionComponent", "x": 1300, "y": 620},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "10", "x": 5, "y": -25, "size": 70},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "playerOneText", "components": [
+                {"name": "positionComponent", "x": 800, "y": 670},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_playerOne.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftOneText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 750},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_left.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftOneButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 775},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "Q", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "Q", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightOneText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 850},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_right.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightOneButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 875},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "D", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "D", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "downOneText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 950},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_backward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "downOneButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 975},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "S", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "S", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupOneText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1050},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_forward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupOneButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1075},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "Z", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "Z", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropOneText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1150},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_dropBomb.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropOneButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1175},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "E", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "E", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "playerTwoText", "components": [
+                {"name": "positionComponent", "x": 750, "y": 1310},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_playerTwo.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftTwoText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1450},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_left.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftTwoButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1475},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "F", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "F", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightTwoText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1550},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_right.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightTwoButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1575},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "H", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "H", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "downTwoText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1650},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_backward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "downTwoButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1675},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "G", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "G", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupTwoText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1750},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_forward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupTwoButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1775},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "T", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "T", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropTwoText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 1850},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_dropBomb.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropTwoButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 1875},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "Y", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "Y", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "playerThreeText", "components": [
+                {"name": "positionComponent", "x": 750, "y": 1960},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_playerThree.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftThreeText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2050},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_left.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftThreeButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2075},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "J", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "J", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightThreeText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2150},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_right.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightThreeButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2175},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "L", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "L", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "downThreeText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2250},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_backward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "downThreeButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2275},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "K", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "K", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupThreeText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2350},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_forward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupThreeButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2375},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "I", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "I", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropThreeText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2450},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_dropBomb.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropThreeButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2475},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "O", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "O", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "playerFourText", "components": [
+                {"name": "positionComponent", "x": 750, "y": 2560},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_playerFour.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftFourText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2650},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_left.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "leftFourButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2675},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "LEFT", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "LEFT", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightFourText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2750},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_right.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "rightFourButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2775},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "RIGHT", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "RIGHT", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "downFourText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2850},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_backward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "downFourButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2875},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "DOWN", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "DOWN", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupFourText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 2950},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_forward.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "mupFourButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 2975},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "UP", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "UP", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "changeButton"},
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropFourText", "components": [
+                {"name": "positionComponent", "x": 600, "y": 3050},
+                {"name": "textureComponent", "filePath": "assets/Settings/txt_dropBomb.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"}
+            ]},
+            {"name": "dropFourButton", "components": [
+                {"name": "positionComponent", "x": 1220, "y": 3075},
+                {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+                {"name": "rectangleComponent"},
+                {"name": "textComponent", "data": "SPACE", "x": 5, "y": -25, "size": 50},
+                {"name": "KeyboardEventComponent", "key": "SPACE", "state": 0},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": [
+                {"name": "scrallable"},
+                {"name": "changeButton"}
+            ]},
+            {"name": "zackgroundTricks", "components": [
+                {"name": "positionComponent", "x": -5, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/Settings/BackSettingsTricks.png"},
+                {"name": "rectangleComponent"},
+                {"name": "scaleComponent", "size": 1}
+            ], "events": []}
+        ]
+    }
+}

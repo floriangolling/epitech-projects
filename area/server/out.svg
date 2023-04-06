@@ -1,0 +1,231 @@
+<svg version="1.1" baseProfile="full" width="5811" height="372" viewbox="0 0 5811 372" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+<title >nomnoml</title>
+<desc >#.interface: fill=lightblue
+#.enumeration: fill=lightgreen
+[GithubService||+setup(): Promise&lt;unknown&gt;]
+[IService]&lt;:-[GithubService]
+[IActions|+id: number;+name: string;+serviceName: string;+description: string;+reaction: IReactions;+client: any;+state: boolean;+lastData: any;+_userId: number|+listen(): void]
+[IReactions|+state: boolean;+id: number;+_userId: number;+name: string;+description: string;+action: IActions;+client: any;+params: any;+serviceName: string|+trigger(): void]
+[IService|+name: string;+client: any;+actions: IActions\[\];+reactions: IReactions\[\];+user_id: number|+addAction(): void;+addReactions(): void;+setup(): void]
+[RedditService||+setup(): Promise&lt;unknown&gt;]
+[IService]&lt;:-[RedditService]
+[TrelloService||+setup(): Promise&lt;unknown&gt;]
+[IService]&lt;:-[TrelloService]
+[TwitchService||+setup(): Promise&lt;unknown&gt;]
+[IService]&lt;:-[TwitchService]
+[TwitterService||+setup(): Promise&lt;unknown&gt;]
+[IService]&lt;:-[TwitterService]
+[IssueAction||+listen(): Promise&lt;void&gt;]
+[FollowAction|-_followers: any|+listen(): Promise&lt;void&gt;]
+[IActions]&lt;:-[IssueAction]
+[IActions]&lt;:-[FollowAction]
+[HotActionReddit||+listen(): Promise&lt;void&gt;]
+[BestActionReaction||+listen(): Promise&lt;void&gt;]
+[IActions]&lt;:-[HotActionReddit]
+[IActions]&lt;:-[BestActionReaction]
+[FirstAction||+listen(): Promise&lt;void&gt;]
+[SecondAction||+listen(): Promise&lt;void&gt;]
+[IActions]&lt;:-[FirstAction]
+[IActions]&lt;:-[SecondAction]
+[chatAction||+listen(): Promise&lt;void&gt;]
+[subAction||+listen(): Promise&lt;void&gt;]
+[IActions]&lt;:-[chatAction]
+[IActions]&lt;:-[subAction]
+[TwitterFollowerAction|+userId: number|+listen(): Promise&lt;void&gt;]
+[TwitterFollowingAction|+userId: number|+listen(): Promise&lt;void&gt;]
+[IActions]&lt;:-[TwitterFollowerAction]
+[IActions]&lt;:-[TwitterFollowingAction]
+[RepoReaction||+trigger(): Promise&lt;void&gt;]
+[IReactions]&lt;:-[RepoReaction]
+[RedditReaction||+trigger(): Promise&lt;void&gt;]
+[IReactions]&lt;:-[RedditReaction]
+[TrelloReaction||+trigger(): Promise&lt;void&gt;]
+[IReactions]&lt;:-[TrelloReaction]
+[chatReaction||+trigger(): Promise&lt;void&gt;]
+[IReactions]&lt;:-[chatReaction]
+[TwitterReaction||+trigger(): Promise&lt;void&gt;]
+[IReactions]&lt;:-[TwitterReaction]</desc>
+<path d="M4939 145.5 L4455 246.5 L4455 278 L4455 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4927 153.4 L4925.9 148.2 L4924.9 143 L4939 145.5 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M4939 170.9 L4758 246.5 L4758 278 L4758 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4928.8 181 L4926.7 176.1 L4924.6 171.1 L4939 170.9 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M5061 211.5 L5061 246.5 L5061 278 L5061 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M5066.3 224.8 L5061 224.8 L5055.7 224.8 L5061 211.5 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M5183 170.9 L5364 246.5 L5364 278 L5364 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M5197.4 171.1 L5195.3 176.1 L5193.2 181 L5183 170.9 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M5183 145.5 L5667 246.5 L5667 278 L5667 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M5197.1 143 L5196.1 148.2 L5195 153.4 L5183 145.5 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1305.5 130.7 L135.5 246.5 L135.5 278 L135.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1292.8 137.3 L1292.2 132 L1291.7 126.7 L1305.5 130.7 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1305.5 133.7 L419.5 246.5 L419.5 266.5 L419.5 266.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1292.9 140.7 L1292.3 135.4 L1291.6 130.1 L1305.5 133.7 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1305.5 139.2 L703.5 246.5 L703.5 278 L703.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1293.3 146.8 L1292.4 141.6 L1291.4 136.3 L1305.5 139.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1305.5 152.1 L987.5 246.5 L987.5 278 L987.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1294.2 161 L1292.7 155.9 L1291.2 150.8 L1305.5 152.1 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1305.5 216.2 L1271.5 246.5 L1271.5 278 L1271.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1299.1 229.1 L1295.5 225.1 L1292 221.1 L1305.5 216.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1521.5 216.2 L1555.5 246.5 L1555.5 278 L1555.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1535 221.1 L1531.5 225.1 L1527.9 229.1 L1521.5 216.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1521.5 152.1 L1839.5 246.5 L1839.5 278 L1839.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1535.8 150.8 L1534.3 155.9 L1532.8 161 L1521.5 152.1 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1521.5 139.2 L2123.5 246.5 L2123.5 278 L2123.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1535.6 136.3 L1534.6 141.6 L1533.7 146.8 L1521.5 139.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1521.5 133.7 L2407.5 246.5 L2407.5 266.5 L2407.5 266.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1535.4 130.1 L1534.7 135.4 L1534.1 140.7 L1521.5 133.7 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1521.5 130.7 L2691.5 246.5 L2691.5 266.5 L2691.5 266.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1535.3 126.7 L1534.8 132 L1534.2 137.3 L1521.5 130.7 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M3465.5 142.2 L2980.5 246.5 L2980.5 278 L2980.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3453.6 150.2 L3452.5 145 L3451.3 139.7 L3465.5 142.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M3465.5 164.3 L3274.5 246.5 L3274.5 278 L3274.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3455.4 174.5 L3453.3 169.6 L3451.1 164.7 L3465.5 164.3 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M3568.5 226.5 L3568.5 246.5 L3568.5 278 L3568.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3573.8 239.8 L3568.5 239.8 L3563.2 239.8 L3568.5 226.5 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M3671.5 164.3 L3862.5 246.5 L3862.5 278 L3862.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3685.9 164.7 L3683.7 169.6 L3681.6 174.5 L3671.5 164.3 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M3671.5 142.2 L4156.5 246.5 L4156.5 278 L4156.5 278 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3685.7 139.7 L3684.5 145 L3683.4 150.2 L3671.5 142.2 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<rect x="4323.5" y="278.5" height="70" width="263" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\github.ts.GithubService" xlink:href="src\services\github.ts"><text x="4455" y="300" style="fill: #33322E;text-anchor: middle;">GithubService</text></a>
+<path d="M4323.5 309.5 L4586.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4323.5 317.5 L4586.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4331.5" y="339" style="fill: #33322E;font-weight:normal;">+setup(): Promise&lt;unknown&gt;</text>
+<rect x="1305.5" y="13.5" height="213" width="216" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id=".IActions" xlink:href=""><text x="1413.5" y="35" style="fill: #33322E;text-anchor: middle;">IActions</text></a>
+<path d="M1305.5 44.5 L1521.5 44.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1313.5" y="66" style="fill: #33322E;font-weight:normal;">+id: number</text>
+<text x="1313.5" y="81" style="fill: #33322E;font-weight:normal;">+name: string</text>
+<text x="1313.5" y="96" style="fill: #33322E;font-weight:normal;">+serviceName: string</text>
+<text x="1313.5" y="111" style="fill: #33322E;font-weight:normal;">+description: string</text>
+<text x="1313.5" y="126" style="fill: #33322E;font-weight:normal;">+reaction: IReactions</text>
+<text x="1313.5" y="141" style="fill: #33322E;font-weight:normal;">+client: any</text>
+<text x="1313.5" y="156" style="fill: #33322E;font-weight:normal;">+state: boolean</text>
+<text x="1313.5" y="171" style="fill: #33322E;font-weight:normal;">+lastData: any</text>
+<text x="1313.5" y="186" style="fill: #33322E;font-weight:normal;">+_userId: number</text>
+<path d="M1305.5 195.5 L1521.5 195.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1313.5" y="217" style="fill: #33322E;font-weight:normal;">+listen(): void</text>
+<rect x="3465.5" y="13.5" height="213" width="206" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id=".IReactions" xlink:href=""><text x="3568.5" y="35" style="fill: #33322E;text-anchor: middle;">IReactions</text></a>
+<path d="M3465.5 44.5 L3671.5 44.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3473.5" y="66" style="fill: #33322E;font-weight:normal;">+state: boolean</text>
+<text x="3473.5" y="81" style="fill: #33322E;font-weight:normal;">+id: number</text>
+<text x="3473.5" y="96" style="fill: #33322E;font-weight:normal;">+_userId: number</text>
+<text x="3473.5" y="111" style="fill: #33322E;font-weight:normal;">+name: string</text>
+<text x="3473.5" y="126" style="fill: #33322E;font-weight:normal;">+description: string</text>
+<text x="3473.5" y="141" style="fill: #33322E;font-weight:normal;">+action: IActions</text>
+<text x="3473.5" y="156" style="fill: #33322E;font-weight:normal;">+client: any</text>
+<text x="3473.5" y="171" style="fill: #33322E;font-weight:normal;">+params: any</text>
+<text x="3473.5" y="186" style="fill: #33322E;font-weight:normal;">+serviceName: string</text>
+<path d="M3465.5 195.5 L3671.5 195.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3473.5" y="217" style="fill: #33322E;font-weight:normal;">+trigger(): void</text>
+<rect x="4939.5" y="28.5" height="183" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id=".IService" xlink:href=""><text x="5061.5" y="50" style="fill: #33322E;text-anchor: middle;">IService</text></a>
+<path d="M4939.5 59.5 L5183.5 59.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4947.5" y="81" style="fill: #33322E;font-weight:normal;">+name: string</text>
+<text x="4947.5" y="96" style="fill: #33322E;font-weight:normal;">+client: any</text>
+<text x="4947.5" y="111" style="fill: #33322E;font-weight:normal;">+actions: IActions[]</text>
+<text x="4947.5" y="126" style="fill: #33322E;font-weight:normal;">+reactions: IReactions[]</text>
+<text x="4947.5" y="141" style="fill: #33322E;font-weight:normal;">+user_id: number</text>
+<path d="M4939.5 150.5 L5183.5 150.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4947.5" y="172" style="fill: #33322E;font-weight:normal;">+addAction(): void</text>
+<text x="4947.5" y="187" style="fill: #33322E;font-weight:normal;">+addReactions(): void</text>
+<text x="4947.5" y="202" style="fill: #33322E;font-weight:normal;">+setup(): void</text>
+<rect x="4626.5" y="278.5" height="70" width="263" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reddit.ts.RedditService" xlink:href="src\services\reddit.ts"><text x="4758" y="300" style="fill: #33322E;text-anchor: middle;">RedditService</text></a>
+<path d="M4626.5 309.5 L4889.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4626.5 317.5 L4889.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4634.5" y="339" style="fill: #33322E;font-weight:normal;">+setup(): Promise&lt;unknown&gt;</text>
+<rect x="4929.5" y="278.5" height="70" width="263" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\trello.ts.TrelloService" xlink:href="src\services\trello.ts"><text x="5061" y="300" style="fill: #33322E;text-anchor: middle;">TrelloService</text></a>
+<path d="M4929.5 309.5 L5192.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4929.5 317.5 L5192.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4937.5" y="339" style="fill: #33322E;font-weight:normal;">+setup(): Promise&lt;unknown&gt;</text>
+<rect x="5232.5" y="278.5" height="70" width="263" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\twitch.ts.TwitchService" xlink:href="src\services\twitch.ts"><text x="5364" y="300" style="fill: #33322E;text-anchor: middle;">TwitchService</text></a>
+<path d="M5232.5 309.5 L5495.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M5232.5 317.5 L5495.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="5240.5" y="339" style="fill: #33322E;font-weight:normal;">+setup(): Promise&lt;unknown&gt;</text>
+<rect x="5535.5" y="278.5" height="70" width="263" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\twitter.ts.TwitterService" xlink:href="src\services\twitter.ts"><text x="5667" y="300" style="fill: #33322E;text-anchor: middle;">TwitterService</text></a>
+<path d="M5535.5 309.5 L5798.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M5535.5 317.5 L5798.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="5543.5" y="339" style="fill: #33322E;font-weight:normal;">+setup(): Promise&lt;unknown&gt;</text>
+<rect x="13.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\github.ts.IssueAction" xlink:href="src\services\actions\github.ts"><text x="135.5" y="300" style="fill: #33322E;text-anchor: middle;">IssueAction</text></a>
+<path d="M13.5 309.5 L257.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M13.5 317.5 L257.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="21.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="297.5" y="266.5" height="93" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\github.ts.FollowAction" xlink:href="src\services\actions\github.ts"><text x="419.5" y="288" style="fill: #33322E;text-anchor: middle;">FollowAction</text></a>
+<path d="M297.5 297.5 L541.5 297.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="305.5" y="319" style="fill: #33322E;font-weight:normal;">-_followers: any</text>
+<path d="M297.5 328.5 L541.5 328.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="305.5" y="350" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="581.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\reddit.ts.HotActionReddit" xlink:href="src\services\actions\reddit.ts"><text x="703.5" y="300" style="fill: #33322E;text-anchor: middle;">HotActionReddit</text></a>
+<path d="M581.5 309.5 L825.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M581.5 317.5 L825.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="589.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="865.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\reddit.ts.BestActionReaction" xlink:href="src\services\actions\reddit.ts"><text x="987.5" y="300" style="fill: #33322E;text-anchor: middle;">BestActionReaction</text></a>
+<path d="M865.5 309.5 L1109.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M865.5 317.5 L1109.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="873.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="1149.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\trello.ts.FirstAction" xlink:href="src\services\actions\trello.ts"><text x="1271.5" y="300" style="fill: #33322E;text-anchor: middle;">FirstAction</text></a>
+<path d="M1149.5 309.5 L1393.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1149.5 317.5 L1393.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1157.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="1433.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\trello.ts.SecondAction" xlink:href="src\services\actions\trello.ts"><text x="1555.5" y="300" style="fill: #33322E;text-anchor: middle;">SecondAction</text></a>
+<path d="M1433.5 309.5 L1677.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1433.5 317.5 L1677.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1441.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="1717.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\twitch.ts.chatAction" xlink:href="src\services\actions\twitch.ts"><text x="1839.5" y="300" style="fill: #33322E;text-anchor: middle;">chatAction</text></a>
+<path d="M1717.5 309.5 L1961.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1717.5 317.5 L1961.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1725.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="2001.5" y="278.5" height="70" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\twitch.ts.subAction" xlink:href="src\services\actions\twitch.ts"><text x="2123.5" y="300" style="fill: #33322E;text-anchor: middle;">subAction</text></a>
+<path d="M2001.5 309.5 L2245.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M2001.5 317.5 L2245.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2009.5" y="339" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="2285.5" y="266.5" height="93" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\twitter.ts.TwitterFollowerAction" xlink:href="src\services\actions\twitter.ts"><text x="2407.5" y="288" style="fill: #33322E;text-anchor: middle;">TwitterFollowerAction</text></a>
+<path d="M2285.5 297.5 L2529.5 297.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2293.5" y="319" style="fill: #33322E;font-weight:normal;">+userId: number</text>
+<path d="M2285.5 328.5 L2529.5 328.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2293.5" y="350" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="2569.5" y="266.5" height="93" width="244" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\actions\twitter.ts.TwitterFollowingAction" xlink:href="src\services\actions\twitter.ts"><text x="2691.5" y="288" style="fill: #33322E;text-anchor: middle;">TwitterFollowingAction</text></a>
+<path d="M2569.5 297.5 L2813.5 297.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2577.5" y="319" style="fill: #33322E;font-weight:normal;">+userId: number</text>
+<path d="M2569.5 328.5 L2813.5 328.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2577.5" y="350" style="fill: #33322E;font-weight:normal;">+listen(): Promise&lt;void&gt;</text>
+<rect x="2853.5" y="278.5" height="70" width="254" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reactions\github.ts.RepoReaction" xlink:href="src\services\reactions\github.ts"><text x="2980.5" y="300" style="fill: #33322E;text-anchor: middle;">RepoReaction</text></a>
+<path d="M2853.5 309.5 L3107.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M2853.5 317.5 L3107.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2861.5" y="339" style="fill: #33322E;font-weight:normal;">+trigger(): Promise&lt;void&gt;</text>
+<rect x="3147.5" y="278.5" height="70" width="254" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reactions\reddit.ts.RedditReaction" xlink:href="src\services\reactions\reddit.ts"><text x="3274.5" y="300" style="fill: #33322E;text-anchor: middle;">RedditReaction</text></a>
+<path d="M3147.5 309.5 L3401.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3147.5 317.5 L3401.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3155.5" y="339" style="fill: #33322E;font-weight:normal;">+trigger(): Promise&lt;void&gt;</text>
+<rect x="3441.5" y="278.5" height="70" width="254" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reactions\trello.ts.TrelloReaction" xlink:href="src\services\reactions\trello.ts"><text x="3568.5" y="300" style="fill: #33322E;text-anchor: middle;">TrelloReaction</text></a>
+<path d="M3441.5 309.5 L3695.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3441.5 317.5 L3695.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3449.5" y="339" style="fill: #33322E;font-weight:normal;">+trigger(): Promise&lt;void&gt;</text>
+<rect x="3735.5" y="278.5" height="70" width="254" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reactions\twitch.ts.chatReaction" xlink:href="src\services\reactions\twitch.ts"><text x="3862.5" y="300" style="fill: #33322E;text-anchor: middle;">chatReaction</text></a>
+<path d="M3735.5 309.5 L3989.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M3735.5 317.5 L3989.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3743.5" y="339" style="fill: #33322E;font-weight:normal;">+trigger(): Promise&lt;void&gt;</text>
+<rect x="4029.5" y="278.5" height="70" width="254" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src\services\reactions\twitter.ts.TwitterReaction" xlink:href="src\services\reactions\twitter.ts"><text x="4156.5" y="300" style="fill: #33322E;text-anchor: middle;">TwitterReaction</text></a>
+<path d="M4029.5 309.5 L4283.5 309.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M4029.5 317.5 L4283.5 317.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="4037.5" y="339" style="fill: #33322E;font-weight:normal;">+trigger(): Promise&lt;void&gt;</text>
+</svg>

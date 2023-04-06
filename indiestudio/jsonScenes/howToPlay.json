@@ -1,0 +1,358 @@
+{
+  "howToPlay": {
+    "entities" : [
+      {"name": "howToPlay", "components": [
+        {"name": "positionComponent", "x": 775, "y": 50},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/txt_tutorial_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "return", "components": [
+        {"name": "positionComponent", "x": 200, "y": 100},
+        {"name": "textureComponent", "filePath": "assets/return.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+    ], "events": [
+        {"name": "switchScene", "id": "mainMenu"}
+    ]},
+      {"name": "background", "components": [
+        {"name": "positionComponent", "x": 0, "y": 0},
+        {"name": "textureComponent", "filePath": "assets/background.png"}
+      ]},
+      {"name": "movement", "components": [
+        {"name": "positionComponent", "x": 1150, "y": 285},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/movement.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "left", "components": [
+        {"name": "positionComponent", "x": 1250, "y": 385},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/left_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "leftButton", "components": [
+        {"name": "positionComponent", "x": 1420, "y": 415},
+        {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data": "Q", "x": 5, "y": -25, "size": 50},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "joystickOne", "components": [
+      {"name": "positionComponent", "x": 1520, "y": 410},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_joystick.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "crossOne", "components": [
+      {"name": "positionComponent", "x": 1630, "y": 405},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_gauche.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+      {"name": "right", "components": [
+        {"name": "positionComponent", "x": 1250, "y": 485},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/right_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "rightButton", "components": [
+        {"name": "positionComponent", "x": 1420, "y": 515},
+        {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data": "D", "x": 5, "y": -25, "size": 50},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "joystickTwo", "components": [
+      {"name": "positionComponent", "x": 1520, "y": 510},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_joystick.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "crossTwo", "components": [
+      {"name": "positionComponent", "x": 1630, "y": 505},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_droite.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+      {"name": "forward", "components": [
+        {"name": "positionComponent", "x": 1250, "y": 585},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/forward_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "forwardButton", "components": [
+        {"name": "positionComponent", "x": 1500, "y": 615},
+        {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data": "Z", "x": 5, "y": -25, "size": 50},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "joystickThree", "components": [
+      {"name": "positionComponent", "x": 1590, "y": 610},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_joystick.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "crossThree", "components": [
+      {"name": "positionComponent", "x": 1690, "y": 605},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_haut.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+      {"name": "backward", "components": [
+        {"name": "positionComponent", "x": 1250, "y": 685},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/backward_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "backwardButton", "components": [
+        {"name": "positionComponent", "x": 1500, "y": 715},
+        {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data": "S", "x": 5, "y": -25, "size": 50},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "joystickFour", "components": [
+      {"name": "positionComponent", "x": 1580, "y": 710},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_joystick.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "crossFour", "components": [
+      {"name": "positionComponent", "x": 1690, "y": 705},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_bas.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+      {"name": "caction", "components": [
+        {"name": "positionComponent", "x": 1150, "y": 785},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/action.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "dropBomb", "components": [
+        {"name": "positionComponent", "x": 1250, "y": 885},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/drop.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "dropButton", "components": [
+        {"name": "positionComponent", "x": 1520, "y": 915},
+        {"name": "textureComponent", "filePath": "assets/tsquare.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data": "E", "x": 5, "y": -25, "size": 50},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+    {"name": "touchA", "components": [
+      {"name": "positionComponent", "x": 1580, "y": 900},
+      {"name": "textureComponent", "filePath": "assets/HowToPlay/img_a.png"},
+      {"name": "rectangleComponent"},
+      {"name": "mouseEventComponent"},
+      {"name": "buttonComponent", "state": 0},
+      {"name": "scaleComponent", "size": 1}
+    ], "events": [
+      {"name": "scrallable"}
+    ]},
+      {"name": "txtBonus", "components": [
+        {"name": "positionComponent", "x": 1150, "y": 985},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/txt_bonus.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "speedup", "components": [
+        {"name": "positionComponent", "x": 1175, "y": 1125},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/speedup.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "speeduptxt", "components": [
+        {"name": "positionComponent", "x": 1300, "y": 1135},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/speedUptxt.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "rangeup", "components": [
+        {"name": "positionComponent", "x": 1175, "y": 1335},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/rangeup.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "rangeuptxt", "components": [
+        {"name": "positionComponent", "x": 1300, "y": 1345},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/rangeuptxt.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "bombup", "components": [
+        {"name": "positionComponent", "x": 1175, "y": 1545},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/bomb_up.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "bombuptxt", "components": [
+        {"name": "positionComponent", "x": 1300, "y": 1580},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/txtbombup.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "wallup", "components": [
+        {"name": "positionComponent", "x": 1175, "y": 1755},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/wall.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "walltxt", "components": [
+        {"name": "positionComponent", "x": 1300, "y": 1790},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/txt_wall.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0}
+      ], "events": [
+        {"name": "scrallable"}
+      ]},
+      {"name": "scene", "components": [
+        {"name": "cameraComponent",
+          "positionX": 12.5, "positionY": 20, "positionZ": 19.0,
+          "targetX": 12.6, "targetY": 0.5, "targetZ": 4.1,
+          "upX": 0, "upY": 1.0, "upZ": 0,
+          "fovy": 45.0
+        }
+      ], "events": []},
+      {"name": "character4", "components": [
+        {"name": "PersoComponent",
+          "positionX": 13, "positionY": 0.4, "positionZ": 11,
+          "iddlemodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": 0
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/p1_idle_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/p1_walk_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso1/p1_dying_anim.iqm",
+          "type": 1},
+          {"name": "StatsComponent", "maxBombs": 1, "actualBombs": 1, "speed": 2.6, "range": 1}
+      ], "events": []},
+      {"name": "mapindestructible", "components": [
+        {"name": "MapComponent", "positionMeshX": 1, "positionMeshY": 1, "positionMeshZ": 1, "positionMapX": 0, "positionMapY": 0,"positionMapZ": 0, "maptype":  0}
+      ], "events": []},
+      {"name": "mapzdestructible", "components": [
+        {"name": "MapComponent", "positionMeshX": 1, "positionMeshY": 1, "positionMeshZ": 1, "positionMapX": 0, "positionMapY": 0,"positionMapZ": 0, "maptype":  1}
+      ], "events": []}
+    ]
+  }
+ }

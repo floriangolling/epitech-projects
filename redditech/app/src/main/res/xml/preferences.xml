@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Customize profile">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enable_followers"
+            android:title="Allow people to follow you"
+            android:summary="Followers will be notified about posts you make to your profile and see them in their home feed."/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Privacy">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="show_location_based_recommendations"
+            android:title="Personalize recommendations based on your general location"
+            android:summary="Allow us to use your city, state, or country (based on your IP) to recommend better posts and communities."/>
+        <ListPreference
+            android:dialogTitle="Collapse potentially disruptive comments"
+            android:key="bad_comment_autocollapse"
+            android:summary="Automatically collapse comments that are potentially rude or disrespectful by selecting the sensitivity level you're most comfortable with—selecting Low will collapse the least, High will collapse the most."
+            android:title="Collapse potentially disruptive comments"
+            android:entries="@array/disruptive_comment"
+            android:entryValues="@array/disruptive_comment_value"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Notifications">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="email_unsubscribe_all"
+            android:title="Unsubscribe from all emails" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Messaging">
+        <ListPreference
+            android:key="accept_pm"
+            android:title="Who can send you private messages"
+            android:entries="@array/who_can_send_messages"
+            android:entryValues="@array/who_can_send_messages_values"
+            android:dialogTitle="Who can send you private messages"
+            android:summary="Heads up—Reddit admins and moderators of communities you’ve joined can message you even if they’re not approved."/>
+    </PreferenceCategory>
+</PreferenceScreen>

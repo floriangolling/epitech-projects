@@ -1,0 +1,201 @@
+{
+  "characterSelectorMenu": {
+    "entities" : [
+      {"name": "title", "components": [
+        {"name": "positionComponent", "x": 1000, "y": -30},
+        {"name": "textureComponent", "filePath": "assets/CharacterSelectionT.png"},
+        {"name": "rectangleComponent"},
+        {"name": "textComponent", "data":"Character Selection", "x": 0, "y": 0, "size" : 100}
+      ], "events": []},
+      {"name": "playButton", "components": [
+        {"name": "positionComponent", "x": 910, "y": 920},
+        {"name": "textureComponent", "filePath": "assets/MainMenu/play.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 5},
+        {"name": "mouseEventComponent"}
+      ], "events": [
+        {"name": "switchScene", "id": "game"},
+        {"name": "changeTexture"}
+      ]},
+      {"name": "background", "components": [
+        {"name": "positionComponent", "x": 0, "y": 0},
+        {"name": "textureComponent", "filePath": "assets/background.png"},
+        {"name": "rectangleComponent"},
+        {"name": "cameraComponent",
+          "positionX": 1.85, "positionY": 0, "positionZ": 9,
+          "targetX": 1.85, "targetY": 1, "targetZ": 0,
+          "upX": 0, "upY": 1.0, "upZ": 0,
+          "fovy": 45.0
+        }
+      ], "events": []},
+      {"name": "characterOne", "components": [
+        {"name": "PersoComponent",
+          "positionX": 0, "positionY": 1.2, "positionZ": 1.3,
+          "iddlemodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso1/p1_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": null
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso1/rumba_anim_2.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso1/rumba_anim_2.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso1/rumba_anim_2.iqm",
+          "actualanimation" : 0,
+          "type": 2}
+      ], "events": []},
+      {"name": "choosePlayerOneButton", "components": [
+        {"name": "positionComponent", "x": 1500, "y": 300},
+        {"name": "textureComponent", "filePath": "assets/img_ai_2.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 3},
+        {"name": "mouseEventComponent"}
+      ], "events": [
+        {"name": "choosePlayer", "numPlayer": 2,"filepathPlayer": "../assets/img_player_1.png", "filepathIA": "../assets/img_ai_2.png"}
+      ]},
+      {"name": "characterTwo", "components": [
+        {"name": "PersoComponent",
+          "positionX": 0, "positionY": -1, "positionZ": 1.3,
+          "iddlemodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso2/p2_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": null
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso2/p2_dance_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso2/p2_dance_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso2/p2_dance_anim.iqm",
+          "actualanimation" : 0,
+          "type": 2}
+      ], "events": []},
+      {"name": "choosePlayerTwoButton", "components": [
+        {"name": "positionComponent", "x": 1500, "y": 700},
+        {"name": "textureComponent", "filePath": "assets/img_ai_2.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 4},
+        {"name": "mouseEventComponent"}
+      ], "events": [
+        {"name": "choosePlayer", "numPlayer": 3,"filepathPlayer": "../assets/img_player_1.png", "filepathIA": "../assets/img_ai_2.png"}
+      ]},
+      {"name": "characterT", "components": [
+        {"name": "PersoComponent",
+          "positionX": 4, "positionY": 1.2, "positionZ": 1.3,
+          "iddlemodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso3/p3_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": null
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso3/p3_dance_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso3/p3_dance_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso3/p3_dance_anim.iqm",
+          "actualanimation" : 0,
+          "type": 2}
+      ], "events": []},
+      {"name": "choosePlayerThreeButton", "components": [
+        {"name": "positionComponent", "x": 350, "y": 300},
+        {"name": "textureComponent", "filePath": "assets/img_player_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 1},
+        {"name": "mouseEventComponent"}
+      ], "events": [
+        {"name": "choosePlayer", "numPlayer": 0,"filepathPlayer": "../assets/img_player_1.png", "filepathIA": "../assets/img_ai_2.png"}
+      ]},
+      {"name": "characterFour", "components": [
+        {"name": "PersoComponent",
+          "positionX": 4, "positionY": -1, "positionZ": 1.3,
+          "iddlemodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "actionmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "deathmodelpath": "../assets/Perso/perso4/p4_model.iqm",
+          "texturepath": "../assets/MainMenu/people_texture_map.png",
+          "id": null
+        },
+        {"name":  "AnimationComponent",
+          "iddleanimationpath" :  "../assets/Perso/perso4/p4_dance_anim.iqm",
+          "actionanimationpath" :  "../assets/Perso/perso4/p4_dance_anim.iqm",
+          "deathanimationpath" :  "../assets/Perso/perso4/p4_dance_anim.iqm",
+          "actualanimation" : 0,
+          "type": 2}
+      ], "events": []},
+      {"name": "choosePlayerFourButton", "components": [
+        {"name": "positionComponent", "x": 350, "y": 700},
+        {"name": "textureComponent", "filePath": "assets/img_ai_2.png"},
+        {"name": "rectangleComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 2},
+        {"name": "mouseEventComponent"}
+      ], "events": [
+        {"name": "choosePlayer", "numPlayer": 1,"filepathPlayer": "../assets/img_player_1.png", "filepathIA": "../assets/img_ai_2.png"}
+      ]},
+      {"name": "return", "components": [
+        {"name": "positionComponent", "x": 20, "y": 20},
+        {"name": "textureComponent", "filePath": "assets/return.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 6}
+      ], "events": [
+        {"name": "switchScene", "id": "mainMenu"}
+      ]},
+      {"name": "playTxt", "components": [
+        {"name": "positionComponent", "x": 910, "y": 930},
+        {"name": "textureComponent", "filePath": "assets/MainMenu/play.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "buttonComponent", "state": 0, "number": 5},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+        {"name": "switchScene", "id": "game"},
+        {"name": "changeTexture"}
+      ]},
+      {"name": "playButton", "components": [
+        {"name": "positionComponent", "x": 800, "y": 910},
+        {"name": "textureComponent", "filePath": "assets/select/img_rt_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "chooseTypeTxt", "components": [
+        {"name": "positionComponent", "x": 300, "y": 895},
+        {"name": "textureComponent", "filePath": "assets/select/txt_player_type.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "chooseTypeButtonOne", "components": [
+        {"name": "positionComponent", "x": 175, "y": 895},
+        {"name": "textureComponent", "filePath": "assets/select/img_rb_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "chooseTypeButtonTwo", "components": [
+        {"name": "positionComponent", "x": 175, "y": 960},
+        {"name": "textureComponent", "filePath": "assets/select/img_lb_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "choosePlayerTxt", "components": [
+        {"name": "positionComponent", "x": 1500, "y": 895},
+        {"name": "textureComponent", "filePath": "assets/select/txt_switch_char_1.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]},
+      {"name": "choosePlayerButton", "components": [
+        {"name": "positionComponent", "x": 1375, "y": 900},
+        {"name": "textureComponent", "filePath": "assets/HowToPlay/img_croix.png"},
+        {"name": "rectangleComponent"},
+        {"name": "mouseEventComponent"},
+        {"name": "scaleComponent", "size": 1}
+      ], "events": [
+      ]}
+    ]
+  }
+}

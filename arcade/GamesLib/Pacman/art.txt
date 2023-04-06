@@ -1,0 +1,27 @@
+            LLL   L   L  L LLLL LLLL
+            L L  L L  L  L L    L
+            LLL L   L L  L L    L
+            L   LLLLL L  L LLLL LLLL
+            L   L   L L  L    L L
+            L   L   L LLLL LLLL LLLL
+
+
+
+
+
+
+
+
+   1111
+  111111                                                
+ 11111111                                             
+11LL11LL11                                          
+11LP11LP11                                           
+1111111111                              LL      LL      LL
+1111111111                              LL      LL      LL  
+1111111111                                             
+1111111111                                             
+1111111111      
+1111111111              
+1111111111       
+11 1111 11 

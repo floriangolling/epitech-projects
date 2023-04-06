@@ -1,0 +1,12 @@
+{
+  "init_raylib" : {
+    "entities" : [
+      {"name": "initraylib", "components": [
+        {"name": "initwindow", "x": 1920, "y": 1080, "windowname" :  "Bomberman", "fps": 30},
+        {"name": "font", "filePath": "../assets/SquadaOne-Regular.ttf", "size" : 100},
+        {"name": "music", "filePath": "../assets/IndieMusic.mp3"},
+        {"name": "sound", "filePath": "../assets/bombSound.wav"}
+      ]}
+    ]
+  }
+}

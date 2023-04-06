@@ -1,0 +1,39 @@
+Protocole
+
+
+1XX (Requête client)
+    => 0:    Trying to connect
+    => 1:    Trying to create an Account => [username, password];
+    => 2:    Add a friend [name(string), name(string)];
+    => 3:    Ask for call with a friend [ip(string), port(int)];
+    => 4:    Ask for all friends of [id(int)]
+    => 5:    Ask for a port to connect
+    => 6:    Ask to close the call
+    => 7:    Ask to accept a call[id];
+    => 8:    Terminate the trying to call[id]
+
+103
+
+2XX (Réponses positives serveur)
+    => 0: Account created => 200
+    => 1: Succesfully logged in
+    => 3: Friend success add; listwithallfriends[{id, name}, {id, name}, ...];
+    => 4: listallfriends[{id, name..}]
+    => 5: port given[id:port]
+    => 6: STop your call;
+    => 7: asking to call (waiting..;)
+
+4XX (Réponse négatives serveur)
+    => 0: User not found
+    => 1: Unauthorized
+    => 2: Wrong credentials
+    => 3: User already exists
+    => 4: Friend not found
+    => 5: Already friends
+    => 6: Client already in call / or disconnected
+
+3XX (EVENTS)
+    => 0: User connected(int ID, std::string username)
+    => 1: You have been invited has friend;
+    => 2: You have been called by [name(string), id(int)]
+    => 3: STOP YOUR ACCEPTION STATEEEE

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SubredditFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/subreddit_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Subreddit background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subscribers_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_radius"
+            app:layout_constraintBottom_toTopOf="@+id/title_title"
+            app:layout_constraintEnd_toStartOf="@+id/subreddit_profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3500" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/subreddit_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/title_title"
+            app:layout_constraintEnd_toEndOf="@+id/subreddit_banner"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/subreddit_banner" />
+
+        <Button
+            android:id="@+id/join_button_sub_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/subscribe_button"
+            app:layout_constraintBottom_toTopOf="@+id/title_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/subreddit_profile_pic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Join" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/subreddit_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/subreddit_description"
+            app:layout_constraintEnd_toEndOf="@+id/subreddit_banner"
+            app:layout_constraintStart_toStartOf="@+id/subreddit_banner" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/title_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/subreddit_description"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            app:layout_constraintBottom_toBottomOf="@+id/subreddit_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere leo sit amet finibus dictum. Nunc lacinia dignissim arcu feugiat consectetur. Integer arcu dolor, vestibulum eget sollicitudin vitae, interdum vel turpis. Duis lobortis erat in metus vulputate bibendum. Curabitur accumsan erat sit amet elit rutrum suscipit. Integer ac ultricies velit. Phasellus sollicitudin lobortis augue. Ut dapibus nibh quis ante mollis, nec fermentum sem gravida. Nulla lorem leo, hendrerit eu elit id, imperdiet gravida libero." />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/subreddit_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/subreddit_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subreddit_banner"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/subreddit_category_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="413dp"
+            android:layout_height="476dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subreddit_category_spinner"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_subreddit"
+                android:layout_width="match_parent"
+                android:layout_height="668dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subreddit_category_spinner"
+                tools:listitem="@layout/card_view_design" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

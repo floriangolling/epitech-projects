@@ -1,0 +1,454 @@
+{
+    "IAPlayers" : [ 1, 2, 3 ],
+    "bombs" :
+    [
+        {
+            "id" : 3,
+            "range" : 1,
+            "time" : 2.2180976867675781,
+            "x" : 5.0,
+            "z" : 3.0
+        },
+        {
+            "id" : 2,
+            "range" : 3,
+            "time" : 0.0,
+            "x" : 11.0,
+            "z" : 3.0
+        }
+    ],
+    "bonus" :
+    [
+        {
+            "type" : 2,
+            "x" : 9.0,
+            "z" : 4.0
+        },
+        {
+            "type" : 4,
+            "x" : 7.0,
+            "z" : 11.0
+        },
+        {
+            "type" : 4,
+            "x" : 5.0,
+            "z" : 3.0
+        }
+    ],
+    "deadPlayers" : [ 0, 1 ],
+    "game" :
+    {
+        "entities" :
+        [
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 0,
+                        "y" : 0
+                    },
+                    {
+                        "filePath" : "assets/back_game.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    }
+                ],
+                "events" : [],
+                "name" : "background"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "fovy" : 45.0,
+                        "name" : "cameraComponent",
+                        "positionX" : 7,
+                        "positionY" : 16,
+                        "positionZ" : 15,
+                        "targetX" : 7,
+                        "targetY" : 8.1999999999999993,
+                        "targetZ" : 11,
+                        "upX" : 0,
+                        "upY" : 1.0,
+                        "upZ" : 0
+                    }
+                ],
+                "events" : [],
+                "name" : "scene"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "maptype" : 0,
+                        "name" : "MapComponent",
+                        "positionMapX" : 0,
+                        "positionMapY" : 0,
+                        "positionMapZ" : 0,
+                        "positionMeshX" : 1,
+                        "positionMeshY" : 1,
+                        "positionMeshZ" : 1
+                    }
+                ],
+                "events" : [],
+                "name" : "mapindestructible"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "maptype" : 1,
+                        "name" : "MapComponent",
+                        "positionMapX" : 0,
+                        "positionMapY" : 0,
+                        "positionMapZ" : 0,
+                        "positionMeshX" : 1,
+                        "positionMeshY" : 1,
+                        "positionMeshZ" : 1
+                    }
+                ],
+                "events" : [],
+                "name" : "mapzdestructible"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "actionmodelpath" : "../assets/Perso/perso4/p4_model.iqm",
+                        "deathmodelpath" : "../assets/Perso/perso4/p4_model.iqm",
+                        "id" : 3,
+                        "iddlemodelpath" : "../assets/Perso/perso4/p4_model.iqm",
+                        "name" : "PersoComponent",
+                        "positionX" : 3.0,
+                        "positionY" : 0.40000000000000002,
+                        "positionZ" : 2.0000002384185791,
+                        "texturepath" : "../assets/MainMenu/people_texture_map.png"
+                    },
+                    {
+                        "actionanimationpath" : "../assets/Perso/perso4/p4_walk_anim.iqm",
+                        "actualanimation" : 0,
+                        "deathanimationpath" : "../assets/Perso/perso4/p4_dying_anim.iqm",
+                        "iddleanimationpath" : "../assets/Perso/perso4/p4_idle_anim.iqm",
+                        "name" : "AnimationComponent",
+                        "type" : 1
+                    },
+                    {
+                        "actualBombs" : 2,
+                        "maxBombs" : 2,
+                        "name" : "StatsComponent",
+                        "range" : 1,
+                        "speed" : 2.6999998092651367
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "id" : "winMenu",
+                        "name" : "switchScene"
+                    }
+                ],
+                "name" : "character1"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "actionmodelpath" : "../assets/Perso/perso3/p3_model.iqm",
+                        "deathmodelpath" : "../assets/Perso/perso3/p3_model.iqm",
+                        "id" : 2,
+                        "iddlemodelpath" : "../assets/Perso/perso3/p3_model.iqm",
+                        "name" : "PersoComponent",
+                        "positionX" : 12.606940269470215,
+                        "positionY" : 0.40000000000000002,
+                        "positionZ" : 2.9999988079071045,
+                        "texturepath" : "../assets/MainMenu/people_texture_map.png"
+                    },
+                    {
+                        "actionanimationpath" : "../assets/Perso/perso3/p3_walk_anim.iqm",
+                        "actualanimation" : 0,
+                        "deathanimationpath" : "../assets/Perso/perso3/p3_dying_anim.iqm",
+                        "iddleanimationpath" : "../assets/Perso/perso3/p3_idle_anim.iqm",
+                        "name" : "AnimationComponent",
+                        "type" : 1
+                    },
+                    {
+                        "actualBombs" : 1,
+                        "maxBombs" : 1,
+                        "name" : "StatsComponent",
+                        "range" : 3,
+                        "speed" : 2.5999999046325684
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "id" : "winMenu",
+                        "name" : "switchScene"
+                    }
+                ],
+                "name" : "character2"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "actionmodelpath" : "../assets/Perso/perso2/p2_model.iqm",
+                        "deathmodelpath" : "../assets/Perso/perso2/p2_model.iqm",
+                        "id" : 1,
+                        "iddlemodelpath" : "../assets/Perso/perso2/p2_model.iqm",
+                        "name" : "PersoComponent",
+                        "positionX" : 13.000003814697266,
+                        "positionY" : 0.40000000000000002,
+                        "positionZ" : 6.3724708557128906,
+                        "texturepath" : "../assets/MainMenu/people_texture_map.png"
+                    },
+                    {
+                        "actionanimationpath" : "../assets/Perso/perso2/p2_walk_anim.iqm",
+                        "actualanimation" : 0,
+                        "deathanimationpath" : "../assets/Perso/perso2/p2_dying_anim.iqm",
+                        "iddleanimationpath" : "../assets/Perso/perso2/p2_idle_anim.iqm",
+                        "name" : "AnimationComponent",
+                        "type" : 1
+                    },
+                    {
+                        "actualBombs" : 1,
+                        "maxBombs" : 1,
+                        "name" : "StatsComponent",
+                        "range" : 2,
+                        "speed" : 2.5999999046325684
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "id" : "winMenu",
+                        "name" : "switchScene"
+                    }
+                ],
+                "name" : "character3"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "actionmodelpath" : "../assets/Perso/perso1/p1_model.iqm",
+                        "deathmodelpath" : "../assets/Perso/perso1/p1_model.iqm",
+                        "id" : 0,
+                        "iddlemodelpath" : "../assets/Perso/perso1/p1_model.iqm",
+                        "name" : "PersoComponent",
+                        "positionX" : 2.0709865093231201,
+                        "positionY" : 0.40000000000000002,
+                        "positionZ" : 6.9416122436523438,
+                        "texturepath" : "../assets/MainMenu/people_texture_map.png"
+                    },
+                    {
+                        "actionanimationpath" : "../assets/Perso/perso1/p1_walk_anim.iqm",
+                        "actualanimation" : 0,
+                        "deathanimationpath" : "../assets/Perso/perso1/p1_dying_anim.iqm",
+                        "iddleanimationpath" : "../assets/Perso/perso1/p1_idle_anim.iqm",
+                        "name" : "AnimationComponent",
+                        "type" : 1
+                    },
+                    {
+                        "actualBombs" : 1,
+                        "maxBombs" : 1,
+                        "name" : "StatsComponent",
+                        "range" : 1,
+                        "speed" : 2.5999999046325684
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "id" : "winMenu",
+                        "name" : "switchScene"
+                    }
+                ],
+                "name" : "character4"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 110,
+                        "y" : 370
+                    },
+                    {
+                        "filePath" : "assets/MainMenu/play.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    },
+                    {
+                        "name" : "buttonComponent",
+                        "number" : 1,
+                        "state" : 0
+                    },
+                    {
+                        "name" : "mouseEventComponent"
+                    },
+                    {
+                        "name" : "PauseComponent"
+                    }
+                ],
+                "events" : [],
+                "name" : "playButton"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 110,
+                        "y" : 450
+                    },
+                    {
+                        "filePath" : "assets/MainMenu/save.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    },
+                    {
+                        "name" : "buttonComponent",
+                        "number" : 2,
+                        "state" : 0
+                    },
+                    {
+                        "name" : "mouseEventComponent"
+                    },
+                    {
+                        "name" : "PauseComponent"
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "name" : "save"
+                    }
+                ],
+                "name" : "saveButton"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 110,
+                        "y" : 530
+                    },
+                    {
+                        "filePath" : "assets/MainMenu/mainmenu.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    },
+                    {
+                        "name" : "buttonComponent",
+                        "number" : 3,
+                        "state" : 0
+                    },
+                    {
+                        "name" : "mouseEventComponent"
+                    },
+                    {
+                        "name" : "PauseComponent"
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "id" : "mainMenu",
+                        "name" : "switchScene"
+                    },
+                    {
+                        "name" : "changeTexture"
+                    }
+                ],
+                "name" : "mainmenuButton"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 110,
+                        "y" : 615
+                    },
+                    {
+                        "filePath" : "assets/MainMenu/quit.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    },
+                    {
+                        "name" : "buttonComponent",
+                        "number" : 4,
+                        "state" : 0
+                    },
+                    {
+                        "name" : "mouseEventComponent"
+                    },
+                    {
+                        "name" : "PauseComponent"
+                    }
+                ],
+                "events" :
+                [
+                    {
+                        "name" : "quit"
+                    }
+                ],
+                "name" : "quitButton"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 0,
+                        "y" : 0
+                    },
+                    {
+                        "filePath" : "assets/background.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    },
+                    {
+                        "name" : "PauseComponent"
+                    }
+                ],
+                "events" : [],
+                "name" : "backgroundTwo"
+            },
+            {
+                "components" :
+                [
+                    {
+                        "name" : "positionComponent",
+                        "x" : 60,
+                        "y" : 75
+                    },
+                    {
+                        "filePath" : "assets/MainMenu/img_logo.png",
+                        "name" : "textureComponent"
+                    },
+                    {
+                        "name" : "rectangleComponent"
+                    }
+                ],
+                "events" : [],
+                "name" : "logo"
+            }
+        ]
+    }
+}

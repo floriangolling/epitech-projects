@@ -1,0 +1,30 @@
+{
+    "playMenu": {
+        "entities" : [
+            {"name": "return", "components": [
+                {"name": "positionComponent", "x": 20, "y": 20},
+                {"name": "textureComponent", "filePath": "assets/return.png"},
+                {"name": "rectangleComponent"},
+                {"name": "mouseEventComponent"},
+                {"name": "buttonComponent", "state": 0}
+            ], "events": [
+                {"name": "switchScene", "id": "mainMenu"}
+            ]},
+            {"name": "background", "components": [
+                {"name": "positionComponent", "x": 0, "y": 0},
+                {"name": "textureComponent", "filePath": "assets/background.png"},
+                {"name": "rectangleComponent"}
+            ], "events": []},
+            {"name": "playButton", "components": [
+                {"name": "positionComponent", "x": 200, "y": 100},
+                {"name": "textureComponent", "filePath": "assets/MainMenu/play.png"},
+                {"name": "rectangleComponent"},
+                {"name": "buttonComponent", "state": 0},
+                {"name": "mouseEventComponent"}
+            ], "events": [
+                {"name": "switchScene", "id": "characterSelectorMenu"},
+                {"name": "changeTexture"}
+            ]}
+        ]
+    }
+}
